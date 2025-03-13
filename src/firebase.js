@@ -9,20 +9,32 @@ import {
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 import ReactNativeAsyncStorage from "@react-native-async-storage/async-storage";
+
+import {
+	apiKey,
+	authDomain,
+	databaseURL,
+	projectId,
+	storageBucket,
+	messagingSenderId,
+	appId,
+	measurementId,
+} from "@env";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-	apiKey: "AIzaSyDZFpZpk60VmJoi-V5qkXFbxPhIDVOvFtw",
-	authDomain: "wechat-16ea4.firebaseapp.com",
-	databaseURL: "https://wechat-16ea4-default-rtdb.firebaseio.com",
-	projectId: "wechat-16ea4",
-	storageBucket: "wechat-16ea4.firebasestorage.app",
-	messagingSenderId: "37387719869",
-	appId: "1:37387719869:web:9d55614ac41be84fd893d4",
-	measurementId: "G-CFDBKWD7LB",
+	apiKey: apiKey,
+	authDomain: authDomain,
+	databaseURL: databaseURL,
+	projectId: projectId,
+	storageBucket: storageBucket,
+	messagingSenderId: messagingSenderId,
+	appId: appId,
+	measurementId: measurementId,
 };
 
 // Initialize Firebase
